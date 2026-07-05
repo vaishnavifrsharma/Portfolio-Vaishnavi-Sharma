@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400;1,9..40,500&family=Pinyon+Script&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+/* ============================================
+   VAISHNAVI SHARMA — RETRO EUROPEAN PORTFOLIO
+   Fresh, Bright, Charming — Nectar-Inspired
+   ============================================ */
+
+/* Tailwind v4: define custom vars inside @theme so they persist */
+@theme {
+  --color-marshmallow: #FCF0F0;
+  --color-marshmallow-dark: #F5E5E5;
+  --color-strawberry: #FFCFDA;
+  --color-strawberry-deep: #FFB0C4;
+  --color-violet: #C0B0FF;
+  --color-violet-light: #D8CFFF;
+  --color-violet-deep: #9B85FF;
+  --color-green-apple: #BDE042;
+  --color-tutti-frutti: #CE317B;
+  --color-dark-licorice: #7F1F25;
+  --color-moss: #433D31;
+  --color-peach: #FFA870;
+  --color-sour-cherry: #C92E2F;
+  --color-bubblegum: #FF7DD0;
+  --color-cream-white: #FFFAF8;
+  --color-warm-white: #FFF5F0;
+  --color-off-black: #2A1F20;
+}
+
+/* Also expose them as simple variable names for inline styles */
+@layer base {
+  :root {
+    --marshmallow: #FCF0F0;
+    --marshmallow-dark: #F5E5E5;
+    --strawberry: #FFCFDA;
+    --strawberry-deep: #FFB0C4;
+    --violet: #C0B0FF;
+    --violet-light: #D8CFFF;
+    --violet-deep: #9B85FF;
+    --green-apple: #BDE042;
+    --tutti-frutti: #CE317B;
+    --dark-licorice: #7F1F25;
+    --moss: #433D31;
+    --peach: #FFA870;
+    --sour-cherry: #C92E2F;
+    --bubblegum: #FF7DD0;
+    --cream-white: #FFFAF8;
+    --warm-white: #FFF5F0;
+    --off-black: #2A1F20;
+
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-heading: 'Outfit', sans-serif;
+    --font-script: 'Pinyon Script', cursive;
+    --font-script-alt: 'Great Vibes', cursive;
+    --font-body: 'DM Sans', sans-serif;
+    --font-sans: 'DM Sans', sans-serif;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--marshmallow);
+    color: var(--off-black);
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  ::selection {
+    background: var(--sour-cherry);
+    color: var(--cream-white);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--marshmallow);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--strawberry-deep);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--sour-cherry);
+  }
+}
+
+/* === Custom components layer (preserved by Tailwind v4) === */
+@layer components {
+  /* === Custom Cursor — BIGGER + Hand Emoji === */
+  .custom-cursor {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--sour-cherry);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 99999;
+    transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+  }
+
+  .custom-cursor.hovering {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  .cursor-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--sour-cherry);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 100000;
+    transition: opacity 0.15s ease;
+  }
+
+  .cursor-dot.hovering {
+    opacity: 0;
+  }
+
+  .cursor-hand {
+    position: fixed;
+    pointer-events: none;
+    z-index: 100001;
+    font-size: 32px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+  }
+
+  .cursor-hand.visible {
+    opacity: 1;
+  }
+
+  /* === Noise/Grain Overlay === */
+  .noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.02;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+  }
+
+  /* === Scroll Progress === */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--sour-cherry);
+    z-index: 9999;
+    transform-origin: left;
+  }
+
+  /* === Stripe Patterns === */
+  .stripe-vertical {
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 18px,
+      var(--strawberry) 18px,
+      var(--strawberry) 20px
+    );
+  }
+
+  .stripe-vertical-wide {
+    background: repeating-linear-gradient(
+      90deg,
+      var(--cream-white) 0px,
+      var(--cream-white) 40px,
+      var(--strawberry) 40px,
+      var(--strawberry) 44px
+    );
+  }
+
+  .stripe-diagonal {
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 12px,
+      rgba(255, 207, 218, 0.25) 12px,
+      rgba(255, 207, 218, 0.25) 14px
+    );
+  }
+
+  .stripe-hero {
+    background: repeating-linear-gradient(
+      90deg,
+      var(--marshmallow) 0px,
+      var(--marshmallow) 60px,
+      rgba(255, 207, 218, 0.35) 60px,
+      rgba(255, 207, 218, 0.35) 63px
+    );
+  }
+
+  /* === Scallop Border === */
+  .scallop-top {
+    position: relative;
+  }
+  .scallop-top::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: radial-gradient(circle at 12px -5px, transparent 12px, var(--sour-cherry) 13px);
+    background-size: 24px 12px;
+  }
+
+  .scallop-bottom {
+    position: relative;
+  }
+  .scallop-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: radial-gradient(circle at 12px 17px, transparent 12px, var(--sour-cherry) 13px);
+    background-size: 24px 12px;
+  }
+
+  /* === Pill Button === */
+  .pill-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 2px solid var(--sour-cherry);
+    background: var(--sour-cherry);
+    color: var(--cream-white);
+    border-radius: 100px;
+    cursor: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .pill-btn:hover {
+    background: transparent;
+    color: var(--sour-cherry);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(201, 46, 47, 0.15);
+  }
+
+  .pill-btn-outline {
+    background: transparent;
+    color: var(--sour-cherry);
+    border-color: var(--sour-cherry);
+  }
+
+  .pill-btn-outline:hover {
+    background: var(--sour-cherry);
+    color: var(--cream-white);
+  }
+
+  .pill-btn-pink {
+    background: var(--strawberry);
+    color: var(--dark-licorice);
+    border-color: var(--strawberry);
+  }
+
+  .pill-btn-pink:hover {
+    background: var(--strawberry-deep);
+    border-color: var(--strawberry-deep);
+    color: var(--dark-licorice);
+  }
+}
+
+/* === Keyframe animations (outside layers) === */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+
+@keyframes marqueeReverse {
+  0% { transform: translateX(-25%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes gentleFloatAlt {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(2deg); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  45% { transform: rotate(14deg); }
+  60% { transform: rotate(-4deg); }
+  75% { transform: rotate(10deg); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+  body { cursor: auto; }
+  .custom-cursor, .cursor-dot, .cursor-hand { display: none !important; }
+}
