@@ -13,6 +13,8 @@
 
 > A personal portfolio built to showcase a blend of engineering logic and creative expression, featuring interactive sections for projects, skills, education, and a dedicated photography gallery.
 
+**[🚀 View Live Portfolio](https://portfolio-vaishnavi-sharma-virid.vercel.app/)**
+
 </div>
 
 <br/>
