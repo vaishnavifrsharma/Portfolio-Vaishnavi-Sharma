@@ -45,8 +45,8 @@ This portfolio was carefully crafted with a strong focus on **aesthetics and use
 
 Feel free to reach out for collaborations, projects, or just a friendly chat!
 - **GitHub**: [vaishnavifrsharma](https://github.com/vaishnavifrsharma)
-- **LinkedIn**: [Vaishnavi Sharma](#) *(Add your link here)*
-- **Email**: [Contact Me](#) *(Add your email here)*
+- **LinkedIn**: [Vaishnavi Sharma](https://www.linkedin.com/in/vaishnavi-sharma-5a1797241/)
+- **Email**: [Contact Me](vaishnavi.sharma.cse.dtu@gmail.com) 
 
 ## 📂 Project Structure
 
