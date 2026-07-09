@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import gsap from 'gsap';
+import Image from 'next/image';
 
 const CATEGORIES = ['All', 'Street', 'Portraits', 'Nature', 'Abstract', 'Campus'];
 
@@ -171,10 +172,12 @@ export default function Photography() {
             onClick={() => setSelectedPhoto(photo)}
             data-hover
           >
-            <img
+            <Image
               src={photo.src}
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              alt={photo.title}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
         ))}
@@ -196,9 +199,12 @@ export default function Photography() {
             ✕
           </button>
           <div className="max-w-4xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
-            <img
+            <Image
               src={selectedPhoto.src}
-              alt=""
+              alt={selectedPhoto.title}
+              width={1200}
+              height={800}
+              sizes="90vw"
               className="w-full h-auto max-h-[85vh] object-contain rounded-xl"
             />
             <div className="mt-6 w-full flex justify-end">

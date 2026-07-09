@@ -28,6 +28,14 @@ export const metadata: Metadata = {
       "CSE student at DTU building web apps, ML projects, and creative technology experiments.",
     url: "https://portfolio-vaishnavi-sharma-virid.vercel.app",
     siteName: "Vaishnavi Sharma Portfolio",
+    images: [
+      {
+        url: "/screenshots/portfolio-home.png",
+        width: 1200,
+        height: 630,
+        alt: "Vaishnavi Sharma Portfolio Preview",
+      },
+    ],
     type: "website",
   },
   twitter: {
@@ -35,6 +43,7 @@ export const metadata: Metadata = {
     title: "Vaishnavi Sharma | Portfolio",
     description:
       "CSE student at DTU building web apps, ML projects, and creative technology experiments.",
+    images: ["/screenshots/portfolio-home.png"],
   },
 };
 

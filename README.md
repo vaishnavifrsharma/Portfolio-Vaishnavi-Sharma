@@ -4,6 +4,11 @@ Personal portfolio website for showcasing my projects, skills, education, creati
 
 Built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **GSAP**.
 
+
+## Preview
+
+![Portfolio Preview](public/screenshots/portfolio-home.png)
+
 ## Live Demo
 
 [View Portfolio](https://portfolio-vaishnavi-sharma-virid.vercel.app/)
