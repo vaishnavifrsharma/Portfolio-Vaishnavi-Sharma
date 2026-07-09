@@ -174,7 +174,7 @@ export default function Photography() {
           >
             <Image
               src={photo.src}
-              alt={photo.title}
+              alt={`${photo.category} photography by Vaishnavi Sharma`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -201,7 +201,7 @@ export default function Photography() {
           <div className="max-w-4xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
             <Image
               src={selectedPhoto.src}
-              alt={selectedPhoto.title}
+              alt={`${selectedPhoto.category} photography by Vaishnavi Sharma`}
               width={1200}
               height={800}
               sizes="90vw"
