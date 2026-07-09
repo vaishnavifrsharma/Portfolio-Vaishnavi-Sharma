@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 
 // Dynamic imports for better code splitting
@@ -24,23 +24,6 @@ const MARQUEE_WORDS = [
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return (
-      <div
-        className="min-h-screen flex items-center justify-center"
-        style={{ background: 'var(--marshmallow)' }}
-      >
-        <span style={{ fontFamily: 'var(--font-display)', fontSize: '4rem', color: 'var(--dark-licorice)', fontStyle: 'italic' }}>0</span>
-      </div>
-    );
-  }
-
   return (
     <SmoothScroll>
       <main>

@@ -235,9 +235,9 @@ export default function About() {
               color: 'var(--moss)',
             }}
           >
-            CSE student at Delhi Technological University with a builder's mindset equally at home debugging algorithms,
+            CSE student at Delhi Technological University with a builder&apos;s mindset equally at home debugging algorithms,
             designing intuitive interfaces, and training AI models to solve real problems.
-            When I step away from the screen, you'll find me behind a camera, chasing good light and better stories.
+            When I step away from the screen, you&apos;ll find me behind a camera, chasing good light and better stories.
           </motion.p>
 
           {/* Interest pills */}
