@@ -55,19 +55,22 @@ A dedicated gallery for selected photography work with categories and lightbox v
 
 ## Run Locally
 
-```bash
-## Run Locally
-
-```bash
+\`\`\`bash
 git clone https://github.com/vaishnavifrsharma/Portfolio-Vaishnavi-Sharma.git
 cd Portfolio-Vaishnavi-Sharma
 npm install
 npm run dev
+\`\`\`
 
 Then open:
 
+\`\`\`text
 http://localhost:3000
-Project Structure
+\`\`\`
+
+## Project Structure
+
+\`\`\`text
 src/
 ├── app/
 │   ├── page.tsx
@@ -79,16 +82,22 @@ src/
 │   ├── CustomCursor.tsx
 │   ├── SmoothScroll.tsx
 │   └── ...
+\`\`\`
 
-Future Improvements
-Add detailed case-study pages for major projects
-Add more screenshots and demo GIFs
-Improve SEO metadata and Open Graph preview
-Add accessibility improvements for reduced motion users
-Make more content server-rendered for better crawlability
-Connect
-GitHub: vaishnavifrsharma
-LinkedIn: Vaishnavi Sharma
-Email: Contact Me
+## Future Improvements
+
+- Add detailed case-study pages for major projects
+- Add more screenshots and demo GIFs
+- Improve SEO metadata and Open Graph preview
+- Add accessibility improvements for reduced motion users
+- Make more content server-rendered for better crawlability
+
+## Connect
+
+- GitHub: [vaishnavifrsharma](https://github.com/vaishnavifrsharma)
+- LinkedIn: [Vaishnavi Sharma](https://www.linkedin.com/in/vaishnavi-sharma-5a1797241/)
+- Email: [Contact Me](mailto:vaishnavi.sharma.cse.dtu@gmail.com)
+
+---
 
 Designed and built by Vaishnavi Sharma.
