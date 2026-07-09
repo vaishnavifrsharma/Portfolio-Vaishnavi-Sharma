@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const ACHIEVEMENTS = [
-  { number: 20, suffix: '+', label: 'DSA Problems', icon: '◆', color: 'var(--sour-cherry)' },
+  { number: 50, suffix: '+', label: 'DSA Problems', icon: '◆', color: 'var(--sour-cherry)' },
   { number: 3, suffix: '+', label: 'Full-Stack Projects', icon: '♡', color: 'var(--violet-deep)' },
   { number: 3, suffix: '+', label: 'Hackathons', icon: '✦', color: 'var(--green-apple)' },
   { number: 25, suffix: '+', label: 'Photos Curated', icon: '❋', color: 'var(--peach)' },

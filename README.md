@@ -1,70 +1,85 @@
-<div align="center">
+# Vaishnavi Sharma Portfolio
 
-# ✨ Vaishnavi Sharma ✨
-### Creative Technologist & Engineer
+Personal portfolio website for showcasing my projects, skills, education, creative work, and photography.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
-</p>
+Built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **GSAP**.
 
-> A personal portfolio built to showcase a blend of engineering logic and creative expression, featuring interactive sections for projects, skills, education, and a dedicated photography gallery.
+## Live Demo
 
-**[🚀 View Live Portfolio](https://portfolio-vaishnavi-sharma-virid.vercel.app/)**
+[View Portfolio](https://portfolio-vaishnavi-sharma-virid.vercel.app/)
 
-</div>
+## About
 
-<br/>
+I am Vaishnavi Sharma, a second-year Computer Science Engineering student at Delhi Technological University.
 
-## 🚀 Features
+This portfolio is designed to present both sides of my work: technical projects built with engineering logic, and creative work shaped through design, photography, and visual storytelling.
 
-- **🎯 Custom Cursor**: A dynamic, animated cursor that reacts to hover states across the application.
-- **🌊 Smooth Scrolling**: Implemented using GSAP for a fluid, premium browsing experience.
-- **📸 Photography Gallery**: A dedicated masonry grid gallery with categorical filtering and a custom lightbox.
-- **📱 Responsive Design**: Carefully tailored experiences for both desktop and mobile devices.
+## Features
 
-## 🛠️ Technologies Used
+- Interactive landing page
+- Animated navigation and custom cursor
+- Smooth scrolling experience
+- Project showcase section
+- Skills and education sections
+- Dedicated photography gallery
+- Responsive layout for desktop and mobile
 
-* **Framework**: [Next.js (App Router)](https://nextjs.org/)
-* **Language**: [TypeScript](https://www.typescriptlang.org/)
-* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-* **Animations**: [Framer Motion](https://www.framer.com/motion/) & [GSAP](https://greensock.com/gsap/)
-* **Icons**: [Lucide React](https://lucide.dev/)
+## Tech Stack
 
-## 🎨 Design Philosophy
+| Area | Tools |
+|---|---|
+| Framework | Next.js App Router |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion, GSAP |
+| Icons | Lucide React |
+| Deployment | Vercel |
 
-This portfolio was carefully crafted with a strong focus on **aesthetics and user experience**. Moving away from generic templates, it incorporates:
-- A sophisticated dark theme accented with carefully chosen vivid colors.
-- Micro-interactions and subtle animations on every element to make the UI feel alive.
-- Modern typography and fluid layout ensuring high readability and a premium feel.
+## Featured Sections
 
-## 📬 Let's Connect
+### Projects
 
-Feel free to reach out for collaborations, projects, or just a friendly chat!
-- **GitHub**: [vaishnavifrsharma](https://github.com/vaishnavifrsharma)
-- **LinkedIn**: [Vaishnavi Sharma](https://www.linkedin.com/in/vaishnavi-sharma-5a1797241/)
-- **Email**: [Contact Me](vaishnavi.sharma.cse.dtu@gmail.com) 
+Highlights selected technical projects including web apps, ML demos, and hackathon builds.
 
-## 📂 Project Structure
+### Skills
 
-```text
+Grouped technical skills across frontend development, machine learning, tools, and creative software.
+
+### Photography
+
+A dedicated gallery for selected photography work with categories and lightbox viewing.
+
+## Run Locally
+
+```bash
+git clone https://github.com/vaishnavifrsharma/Portfolio-Vaishnavi-Sharma.git
+cd Portfolio-Vaishnavi-Sharma
+npm install
+npm run dev
+Then open:
+
+http://localhost:3000
+Project Structure
 src/
 ├── app/
-│   ├── page.tsx             # Main landing page (Hero, About, Projects, etc.)
-│   ├── globals.css          # Global styling & CSS variables
-│   └── photography/         # Photography gallery route
+│   ├── page.tsx
+│   ├── globals.css
+│   └── photography/
 │       └── page.tsx
-├── components/              # Reusable UI components
+├── components/
 │   ├── Navigation.tsx
 │   ├── CustomCursor.tsx
 │   ├── SmoothScroll.tsx
 │   └── ...
-```
+Future Improvements
+Add detailed case-study pages for major projects
+Add screenshots and demo GIFs
+Improve SEO metadata and Open Graph preview
+Add accessibility improvements for reduced motion users
+Make more content server-rendered for better crawlability
+Connect
+GitHub: vaishnavifrsharma
+LinkedIn: Vaishnavi Sharma
+Email: Contact Me
 
-<br/>
-<div align="center">
-  <i>Designed and built with ❤️ by Vaishnavi Sharma</i>
-</div>
+Designed and built by Vaishnavi Sharma.
