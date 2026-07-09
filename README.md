@@ -4,7 +4,6 @@ Personal portfolio website for showcasing my projects, skills, education, creati
 
 Built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **GSAP**.
 
-
 ## Preview
 
 ![Portfolio Preview](public/screenshots/portfolio-home.png)
@@ -57,10 +56,14 @@ A dedicated gallery for selected photography work with categories and lightbox v
 ## Run Locally
 
 ```bash
+## Run Locally
+
+```bash
 git clone https://github.com/vaishnavifrsharma/Portfolio-Vaishnavi-Sharma.git
 cd Portfolio-Vaishnavi-Sharma
 npm install
 npm run dev
+
 Then open:
 
 http://localhost:3000
@@ -76,9 +79,10 @@ src/
 │   ├── CustomCursor.tsx
 │   ├── SmoothScroll.tsx
 │   └── ...
+
 Future Improvements
 Add detailed case-study pages for major projects
-Add screenshots and demo GIFs
+Add more screenshots and demo GIFs
 Improve SEO metadata and Open Graph preview
 Add accessibility improvements for reduced motion users
 Make more content server-rendered for better crawlability
