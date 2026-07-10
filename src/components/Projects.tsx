@@ -9,7 +9,7 @@ const PROJECTS = [
   {
     title: 'Deepdetect',
     description:
-      'Audio deepfake detection system that classifies real vs. AI-generated speech using mel-spectrogram features. Trained with PyTorch on Apple Silicon with Metal acceleration.',
+      'Audio deepfake detection system (team project) classifying real vs. AI-generated speech using mel-spectrogram features. My contribution: infrastructure and pipeline work.',
     tech: ['PyTorch', 'TensorFlow', 'Librosa'],
     category: 'AI/ML',
     github: 'https://github.com/mrinalmeena/Deep-Detect',
@@ -232,21 +232,24 @@ export default function Projects() {
               </div>
 
               {/* Link */}
-              <a
-                href={project.github}
-                className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-[var(--sour-cherry)]"
-                style={{
-                  fontFamily: 'var(--font-sans)',
-                  fontSize: '0.75rem',
-                  fontWeight: 600,
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase',
-                  color: 'var(--dark-licorice)',
-                }}
-                data-hover
-              >
-                GitHub ↗
-              </a>
+
+              {project.github && (
+                <a
+                  href={project.github}
+                  className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-[var(--sour-cherry)]"
+                  style={{
+                    fontFamily: 'var(--font-sans)',
+                    fontSize: '0.75rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    color: 'var(--dark-licorice)',
+                  }}
+                  data-hover
+                >
+                  GitHub ↗
+                </a>
+              )}
             </motion.div>
           ))}
         </div>

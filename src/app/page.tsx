@@ -2,20 +2,20 @@
 
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
-
-// Dynamic imports for better code splitting
+import Navigation from '@/components/Navigation';
+import Hero from '@/components/Hero';
+import Marquee from '@/components/Marquee';
+import About from '@/components/About';
+import Achievements from '@/components/Achievements';
+import Education from '@/components/Education';
+import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
+// These three touch window/DOM directly — stay client-only
 const SmoothScroll = dynamic(() => import('@/components/SmoothScroll'), { ssr: false });
 const CustomCursor = dynamic(() => import('@/components/CustomCursor'), { ssr: false });
 const Loader = dynamic(() => import('@/components/Loader'), { ssr: false });
-const Navigation = dynamic(() => import('@/components/Navigation'), { ssr: false });
-const Hero = dynamic(() => import('@/components/Hero'), { ssr: false });
-const Marquee = dynamic(() => import('@/components/Marquee'), { ssr: false });
-const About = dynamic(() => import('@/components/About'), { ssr: false });
-const Achievements = dynamic(() => import('@/components/Achievements'), { ssr: false });
-const Education = dynamic(() => import('@/components/Education'), { ssr: false });
-const Skills = dynamic(() => import('@/components/Skills'), { ssr: false });
-const Projects = dynamic(() => import('@/components/Projects'), { ssr: false });
-const Contact = dynamic(() => import('@/components/Contact'), { ssr: false });
 
 const MARQUEE_WORDS = [
   'DEVELOPER', 'PHOTOGRAPHER', 'ENGINEER', 'CREATIVE', 'PROBLEM SOLVER',
@@ -59,6 +59,9 @@ export default function Home() {
 
         {/* Skills */}
         <Skills />
+
+        {/* Experience */}
+        <Experience />
 
         {/* Marquee Divider */}
         <Marquee

@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { label: 'About', href: '#about' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Education', href: '#education' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Photography', href: '/photography' },
@@ -29,7 +30,7 @@ export default function Navigation() {
       setScrollProgress(docHeight > 0 ? scrollTop / docHeight : 0);
       setIsScrolled(scrollTop > 80);
 
-      const sections = ['contact', 'projects', 'skills', 'education', 'achievements', 'about'];
+      const sections = ['contact', 'projects', 'experience', 'skills', 'education', 'achievements', 'about'];
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el && el.getBoundingClientRect().top <= 200) {
@@ -101,7 +102,7 @@ export default function Navigation() {
 
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
-          {NAV_ITEMS.slice(0, 5).map(item => (
+          {NAV_ITEMS.slice(0, 6).map(item => (
             <a
               key={item.label}
               href={item.href}

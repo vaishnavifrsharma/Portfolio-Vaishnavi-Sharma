@@ -142,7 +142,7 @@ export default function About() {
               {/* Photo Area (with fallback if image is not found) */}
               {!imageError ? (
                 <image
-                  href="/IMG.jpeg"
+                  href="/IMG.webp"
                   x="35"
                   y="75"
                   width="250"

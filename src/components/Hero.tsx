@@ -225,6 +225,9 @@ export default function Hero() {
           <a href="/photography" className="pill-btn-outline pill-btn" data-hover>
             Photography
           </a>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="pill-btn-outline pill-btn" data-hover>
+            Resume
+          </a>
           <button onClick={() => scrollTo('contact')} className="pill-btn-outline pill-btn" data-hover>
             Get in Touch
           </button>
