@@ -1,76 +1,66 @@
 # Vaishnavi Sharma Portfolio
 
-Personal portfolio website for showcasing my projects, skills, education, creative work, and photography.
+### Personal portfolio for AI/ML, creative technology, photography, and campus work.
 
-Built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **GSAP**.
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black)
 
-## Preview
+A personal portfolio built to showcase my work across software development, AI/ML, creative technology, photography, and campus involvement.
 
-![Portfolio Preview](public/screenshots/portfolio-home.png)
+The site combines a warm editorial visual style with smooth interactions, project showcases, experience cards, and a dedicated photography gallery.
 
 ## Live Demo
 
-[View Portfolio](https://portfolio-vaishnavi-sharma-virid.vercel.app/)
+Check out the deployed version here:
 
-## About
+[View Portfolio](https://portfolio-vaishnavi-sharma-virid.vercel.app)
 
-I am Vaishnavi Sharma, a second-year Computer Science Engineering student at Delhi Technological University.
+## Preview
 
-This portfolio is designed to present both sides of my work: technical projects built with engineering logic, and creative work shaped through design, photography, and visual storytelling.
+![Portfolio Preview](public/portfolio-home.png)
 
 ## Features
 
-- Interactive landing page
-- Animated navigation and custom cursor
-- Smooth scrolling experience
-- Project showcase section
-- Skills and education sections
-- Dedicated photography gallery
-- Responsive layout for desktop and mobile
+- Interactive landing page with animated sections
+- About, education, achievements, experience, skills, and projects sections
+- Dedicated photography gallery with a visual-first layout
+- Smooth scrolling and motion-based interactions
+- Custom cursor and hover effects
+- Responsive design for desktop, tablet, and mobile screens
+- Resume download and contact links
 
 ## Tech Stack
 
-| Area | Tools |
-|---|---|
-| Framework | Next.js App Router |
-| Language | TypeScript |
-| Styling | Tailwind CSS |
-| Animations | Framer Motion, GSAP |
-| Icons | Lucide React |
-| Deployment | Vercel |
+- **Framework:** Next.js App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion, GSAP
+- **Icons:** Lucide React
+- **Deployment:** Vercel
 
-## Featured Sections
+## Design Direction
 
-### Projects
+The portfolio uses a warm editorial visual system with soft backgrounds, burgundy accents, serif typography, minimal cards, and subtle motion.
 
-Highlights selected technical projects including web apps, ML demos, and hackathon builds.
-
-### Skills
-
-Grouped technical skills across frontend development, machine learning, tools, and creative software.
-
-### Photography
-
-A dedicated gallery for selected photography work with categories and lightbox viewing.
+The goal is to make the site feel professional without becoming sterile, and creative without becoming chaotic.
 
 ## Run Locally
 
-\`\`\`bash
+```bash
 git clone https://github.com/vaishnavifrsharma/Portfolio-Vaishnavi-Sharma.git
 cd Portfolio-Vaishnavi-Sharma
 npm install
 npm run dev
-\`\`\`
+```
 
-Then open:
-
-\`\`\`text
-http://localhost:3000
-\`\`\`
+Open `http://localhost:3000` in your browser.
 
 ## Project Structure
 
-\`\`\`text
+```bash
 src/
 ├── app/
 │   ├── page.tsx
@@ -78,25 +68,35 @@ src/
 │   └── photography/
 │       └── page.tsx
 ├── components/
+│   ├── About.tsx
+│   ├── Experience.tsx
+│   ├── Hero.tsx
 │   ├── Navigation.tsx
+│   ├── Projects.tsx
 │   ├── CustomCursor.tsx
-│   ├── SmoothScroll.tsx
-│   └── ...
-\`\`\`
+│   └── SmoothScroll.tsx
+public/
+├── resume.pdf
+└── photography assets
+```
 
-## Future Improvements
+## Sections
 
-- Add detailed case-study pages for major projects
-- Add more screenshots and demo GIFs
-- Improve SEO metadata and Open Graph preview
-- Add accessibility improvements for reduced motion users
-- Make more content server-rendered for better crawlability
+- Hero
+- About
+- Achievements
+- Education
+- Experience
+- Skills
+- Projects
+- Photography
+- Contact
 
-## Connect
+## Contact
 
-- GitHub: [vaishnavifrsharma](https://github.com/vaishnavifrsharma)
-- LinkedIn: [Vaishnavi Sharma](https://www.linkedin.com/in/vaishnavi-sharma-5a1797241/)
-- Email: [Contact Me](mailto:vaishnavi.sharma.cse.dtu@gmail.com)
+- **GitHub:** [vaishnavifrsharma](https://github.com/vaishnavifrsharma)
+- **Email:** [vaishnavi.sharma.cse.dtu@gmail.com](mailto:vaishnavi.sharma.cse.dtu@gmail.com)
+- **Linkedin**: [vaishnavifrsharma](https://www.linkedin.com/in/vaishnavi-sharma-5a1797241/)
 
 ---
 
