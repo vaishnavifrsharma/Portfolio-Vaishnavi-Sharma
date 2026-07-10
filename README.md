@@ -20,7 +20,7 @@ Check out the deployed version here:
 
 ## Preview
 
-![Portfolio Preview](public/portfolio-home.png)
+![Portfolio Preview](public/screenshots/portfolio-home.png)
 
 ## Features
 
